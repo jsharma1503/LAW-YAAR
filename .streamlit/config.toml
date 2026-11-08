@@ -1,0 +1,24 @@
+[theme]
+base = "light"
+primaryColor = "#CC5500"              # burnt orange
+backgroundColor = "#F5EFE0"           # cream
+secondaryBackgroundColor = "#EDE3CE"
+textColor = "#141210"                 # ink black
+linkColor = "#A64400"
+borderColor = "#E4D9C3"
+baseRadius = "0.6rem"
+showSidebarBorder = false
+
+[theme.sidebar]
+backgroundColor = "#141210"           # ink black sidebar
+secondaryBackgroundColor = "#221E1A"
+textColor = "#EFE6D4"
+primaryColor = "#E0692A"
+borderColor = "#2E2822"
+linkColor = "#F08A4B"
+
+[client]
+toolbarMode = "minimal"
+
+[server]
+maxUploadSize = 25

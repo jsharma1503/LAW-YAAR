@@ -1,0 +1,324 @@
+# Nyay Saathi — curated knowledge base for FOUR problems only:
+#   deposit  : landlord not returning the security deposit
+#   consumer : refund not received / defective product / order not delivered / poor service
+#   salary   : salary unpaid / full-and-final settlement withheld
+#   notice   : the user RECEIVED a notice about one of the above
+#
+# Rules for this file
+# - Citations in answers render as ✅ only from these entries (the model cites them by id: [KB:cow_17]).
+# - Every entry was checked on 2026-11-08 against the section text at `checked_against` (bare-act page or official notice).
+#   `source_url` is the official/primary source where one exists.
+# - confidence: high   = section text read and the summary matches it
+#               medium = consistent reliable secondary sources; small details (e.g. amendments, fees) may change
+#               low    = general principle / depends on facts — the app must tell the user to confirm with a lawyer
+# - Summaries paraphrase the law in plain words. They never add a right the text does not give.
+# - `also:` lists other areas where the entry is retrieved too.
+
+meta:
+  verified_on: "2026-11-08"
+  areas: [deposit, consumer, salary, notice]
+
+entries:
+
+  # ================================================================== DEPOSIT (tenancy is STATE law)
+  - id: deposit_state_law
+    category: deposit
+    act: "General principle"
+    section: "none"
+    title: "Deposit rules depend on your state and your rent agreement"
+    summary: "Rent and security-deposit rules are made by each state. Some states have newer tenancy laws (for example Uttar Pradesh and Tamil Nadu); many still use older rent laws that say little about deposits. In every state, the written rent agreement is the first document to read: it usually says how much the deposit is, when it must be returned and what can be deducted."
+    source_url: "https://prsindia.org/billtrack/the-model-tenancy-act-2021"
+    checked_against: "https://prsindia.org/billtrack/the-model-tenancy-act-2021"
+    confidence: medium
+
+  - id: mta_2021
+    category: deposit
+    act: "Model Tenancy Act, 2021"
+    section: "model"
+    title: "Model Tenancy Act — a template for states, not law by itself"
+    summary: "Approved by the Union Cabinet in June 2021 as a model for states. It caps the deposit at two months' rent for residential premises (six months for non-residential) and says the landlord refunds it when taking back vacant possession, after lawful deductions. It applies to you ONLY if your state has passed its own law based on it."
+    source_url: "https://prsindia.org/billtrack/the-model-tenancy-act-2021"
+    checked_against: "https://prsindia.org/billtrack/the-model-tenancy-act-2021"
+    confidence: high
+
+  - id: up_tenancy_11
+    category: deposit
+    act: "Uttar Pradesh Regulation of Urban Premises Tenancy Act, 2021"
+    section: "11"
+    title: "Uttar Pradesh: deposit cap and refund"
+    summary: "For urban premises in UP, the deposit is what the tenancy agreement says, but not more than two months' rent for residential premises (six months for non-residential). It must be refunded on the date the landlord takes over vacant possession, after deducting the tenant's genuine liabilities (for example unpaid rent)."
+    forum: "Rent Authority under the UP Act (through the district administration)"
+    source_url: "https://www.indiacode.nic.in/handle/123456789/21157"
+    checked_against: "https://vidhijudicial.com/sec-8-to-11-(chapter-iii-rent)the-uttar-pradesh-regulation-of-urban-premises-short-title,-extent,-tenancy-act,-2021.html"
+    confidence: high
+    notes: "Whether the Rent Authority route is available can depend on the tenancy being covered by the Act (e.g. an agreement informed to the Rent Authority). Ask the user to confirm locally."
+
+  - id: tn_tenancy_11
+    category: deposit
+    act: "Tamil Nadu Regulation of Rights and Responsibilities of Landlords and Tenants Act, 2017"
+    section: "11"
+    title: "Tamil Nadu: deposit cap and refund"
+    summary: "Unless the parties agree otherwise, a landlord in Tamil Nadu cannot take a deposit of more than three months' rent. The deposit is refundable when the landlord takes back possession of the vacated premises, after deducting the tenant's genuine liabilities. (The refund timing was changed by a 2018 amendment.)"
+    forum: "Rent Authority / Rent Court under the TN Act"
+    source_url: "https://www.indiacode.nic.in/bitstream/123456789/21810/1/2017tn42.pdf"
+    checked_against: "https://www.casemine.com/act/in/67e3e058c818963e4e88c4a0"
+    confidence: medium
+
+  - id: ica_73
+    category: deposit
+    also: [salary, notice]
+    act: "Indian Contract Act, 1872"
+    section: "73"
+    title: "Breach of an agreement: compensation"
+    summary: "When an agreement is broken, the person who suffers can claim compensation for the loss that naturally follows from the breach (or that both sides knew was likely when they agreed). Example: a landlord who keeps a deposit the agreement says must be returned."
+    source_url: "https://www.indiacode.nic.in"
+    checked_against: "https://vidhijudicial.com/section-73-of-the-indian-contract-act,-1872.html"
+    confidence: high
+
+  - id: deposit_recovery_route
+    category: deposit
+    act: "General principle"
+    section: "none"
+    title: "If the landlord still won't pay"
+    summary: "Usual order: written demand (WhatsApp/email) → legal notice → the state's Rent Authority if your state law provides one, otherwise a civil suit for recovery of money. A pre-litigation Lok Adalat through the District Legal Services Authority is a free option for settlement. For a money claim the time limit is generally three years, but when it starts depends on the facts — confirm with a lawyer."
+    forum: "Rent Authority (where available) / civil court / pre-litigation Lok Adalat via DLSA"
+    time_limit: "Generally 3 years — confirm with a lawyer"
+    source_url: "https://nalsa.gov.in"
+    checked_against: "https://www.apnilaw.com/legal-articles/acts/lok-adalats-under-the-legal-services-authorities-act-1987-sections-19-22/"
+    confidence: low
+
+  # ================================================================== CONSUMER
+  - id: cpa_2_7
+    category: consumer
+    act: "Consumer Protection Act, 2019"
+    section: "2(7)"
+    title: "Who is a 'consumer'"
+    summary: "A person who buys goods or hires a service for payment — including online — is a consumer. Buying for resale or for a commercial purpose is generally excluded."
+    source_url: "https://www.indiacode.nic.in/handle/123456789/15256"
+    checked_against: "https://www.indiacode.nic.in/handle/123456789/15256"
+    confidence: high
+
+  - id: cpa_2_10
+    category: consumer
+    act: "Consumer Protection Act, 2019"
+    section: "2(10)"
+    title: "'Defect' in goods"
+    summary: "Any fault, imperfection or shortcoming in the quality, quantity, potency, purity or standard of goods compared with what the law, the contract, or the seller's own claim promised."
+    source_url: "https://www.indiacode.nic.in/handle/123456789/15256"
+    checked_against: "https://www.indiacode.nic.in/handle/123456789/15256"
+    confidence: high
+
+  - id: cpa_2_11
+    category: consumer
+    act: "Consumer Protection Act, 2019"
+    section: "2(11)"
+    title: "'Deficiency' in service"
+    summary: "Any fault, imperfection, shortcoming or inadequacy in the quality, nature or manner of a service — for example a refund that was approved but never paid, or an order not delivered after payment."
+    source_url: "https://www.indiacode.nic.in/handle/123456789/15256"
+    checked_against: "https://www.indiacode.nic.in/handle/123456789/15256"
+    confidence: high
+
+  - id: ecom_4_5
+    category: consumer
+    act: "Consumer Protection (E-Commerce) Rules, 2020"
+    section: "Rule 4(5)"
+    title: "Online platforms: grievance officer timelines"
+    summary: "Every e-commerce platform must have a grievance officer, display their contact details, acknowledge a consumer complaint within 48 hours, and resolve it within one month of receiving it."
+    time_limit: "Acknowledge within 48 hours; resolve within 1 month"
+    source_url: "https://consumeraffairs.nic.in"
+    checked_against: "https://www.legitquest.com/act/consumer-protection-e-commerce-rules-2020/91C8"
+    confidence: high
+
+  - id: ecom_4_10
+    category: consumer
+    act: "Consumer Protection (E-Commerce) Rules, 2020"
+    section: "Rule 4(10)"
+    title: "Online platforms: accepted refunds must be paid"
+    summary: "An e-commerce platform must pay accepted refund requests within a reasonable time, or within the time set by applicable law/RBI rules."
+    source_url: "https://consumeraffairs.nic.in"
+    checked_against: "https://www.legitquest.com/act/consumer-protection-e-commerce-rules-2020/91C8"
+    confidence: high
+
+  - id: proc_nch
+    category: consumer
+    act: "National Consumer Helpline (Department of Consumer Affairs)"
+    section: "process"
+    title: "Free first step: National Consumer Helpline"
+    summary: "Before going to a commission, you can lodge a free complaint with the National Consumer Helpline: call 1915 or use consumerhelpline.gov.in. It forwards the complaint to the company and follows up. It is not a court and cannot pass binding orders."
+    forum: "Call 1915 or https://consumerhelpline.gov.in"
+    source_url: "https://consumerhelpline.gov.in"
+    checked_against: "https://consumerhelpline.gov.in"
+    confidence: high
+
+  - id: cpa_34
+    category: consumer
+    act: "Consumer Protection Act, 2019"
+    section: "34"
+    title: "Which District Commission — you can file where you live or work"
+    summary: "A complaint can be filed in the District Commission where the seller/company resides or carries on business or has a branch, where the problem arose, OR where you (the complainant) live or personally work for gain."
+    forum: "District Consumer Disputes Redressal Commission"
+    source_url: "https://www.indiacode.nic.in/handle/123456789/15256"
+    checked_against: "https://www.advocatekhoj.com/library/bareacts/consumerprotection2019/34.php"
+    confidence: high
+
+  - id: cpa_value_limits
+    category: consumer
+    act: "Consumer Protection (Jurisdiction of the District Commission, the State Commission and the National Commission) Rules, 2021"
+    section: "rules"
+    title: "Which commission, by amount paid"
+    summary: "District Commission: price paid up to Rs 50 lakh. State Commission: above Rs 50 lakh up to Rs 2 crore. National Commission: above Rs 2 crore. The limit is based on the price you PAID, not the compensation you claim. (These Rules, notified on 30 Dec 2021, replaced the higher limit written in section 34 of the Act.)"
+    source_url: "https://taxguru.in/?p=800045"
+    checked_against: "https://www.scconline.com/blog/post/2022/01/03/pecuniary-jurisdiction-of-district-state-and-national-commissions-revised-vide-consumer-protection-jurisdiction-of-the-district-commission-the-state-commission-and-the-national-commission-rules-2/"
+    confidence: high
+
+  - id: cpa_35_ejagriti
+    category: consumer
+    act: "Consumer Protection Act, 2019"
+    section: "35"
+    title: "Filing the complaint — online on e-Jagriti, no lawyer needed"
+    summary: "The consumer can file the complaint personally; a lawyer is not required. Complaints are filed online on the e-Jagriti portal, which replaced e-Daakhil from 1 January 2025."
+    forum: "https://e-jagriti.gov.in"
+    documents: ["invoice / order confirmation", "payment proof (UPI/bank/card)", "screenshots of complaints and replies", "photos/video of the defect or unboxing", "copy of any notice sent", "ID proof"]
+    source_url: "https://e-jagriti.gov.in"
+    checked_against: "https://righttoinformation.wiki/how-to-file-consumer-forum-complaint-e-jagriti-dcdrc-india"
+    confidence: medium
+
+  - id: cpa_fee
+    category: consumer
+    act: "Consumer Protection (Consumer Disputes Redressal Commissions) Rules, 2020"
+    section: "Rule 7"
+    title: "Filing fee at the District Commission"
+    summary: "No fee if the price paid is up to Rs 5 lakh. Above Rs 5 lakh to 10 lakh: Rs 200; above 10 lakh to 20 lakh: Rs 400; above 20 lakh to 50 lakh: Rs 1,000 (table as amended in August 2023)."
+    source_url: "https://egazette.gov.in/WriteReadData/2023/248158.pdf"
+    checked_against: "https://www.taxclue.in/blog/rule-7-consumer-protection-cdrc-rules-2020-fee-for-filing-a-consumer-complaint/"
+    confidence: medium
+
+  - id: cpa_39
+    category: consumer
+    act: "Consumer Protection Act, 2019"
+    section: "39"
+    title: "What the commission can order"
+    summary: "If the complaint is proved, the District Commission can order the seller to remove the defect, replace the goods, return the price with interest, pay compensation for loss or injury caused by negligence (and punitive damages where it thinks fit), and pay costs."
+    source_url: "https://www.indiacode.nic.in/handle/123456789/15256"
+    checked_against: "https://www.advocatekhoj.com/library/bareacts/consumerprotection2019/39.php"
+    confidence: high
+
+  - id: cpa_69
+    category: consumer
+    act: "Consumer Protection Act, 2019"
+    section: "69"
+    title: "Time limit for a consumer complaint"
+    summary: "The complaint must be filed within two years from the date the problem (cause of action) arose. A late complaint is admitted only if you show sufficient cause and the commission records its reasons for condoning the delay."
+    time_limit: "2 years from the cause of action"
+    source_url: "https://www.indiacode.nic.in/handle/123456789/15256"
+    checked_against: "https://www.advocatekhoj.com/library/bareacts/consumerprotection2019/69.php"
+    confidence: high
+
+  # ================================================================== SALARY
+  - id: cow_status
+    category: salary
+    act: "Code on Wages, 2019"
+    section: "status"
+    title: "Which law applies to unpaid salary now"
+    summary: "Since 21 November 2025 the Code on Wages, 2019 is in force. It replaced the Payment of Wages Act, 1936, the Minimum Wages Act, 1948, the Payment of Bonus Act, 1965 and the Equal Remuneration Act, 1976. It covers employees including supervisory and managerial staff (not apprentices or people on a retainership). Some state rules are still being notified, so local procedure may differ."
+    source_url: "https://www.indiacode.nic.in/handle/123456789/15793"
+    checked_against: "https://nyaaya.org/legal-explainer/whom-does-the-law-apply-to/"
+    confidence: high
+
+  - id: cow_17
+    category: salary
+    act: "Code on Wages, 2019"
+    section: "17"
+    title: "Deadlines for paying wages"
+    summary: "Monthly wages must be paid before the end of the 7th day of the next month. If an employee resigns, is removed, dismissed or retrenched, or loses the job because the establishment closed, the wages due must be paid within TWO WORKING DAYS. The government may set a different reasonable time limit in some circumstances."
+    time_limit: "Monthly: by the 7th of next month. On leaving: within 2 working days."
+    source_url: "https://www.indiacode.nic.in/handle/123456789/15793"
+    checked_against: "https://www.advocatekhoj.com/library/bareacts/codeonwages/17.php"
+    confidence: high
+
+  - id: cow_18
+    category: salary
+    act: "Code on Wages, 2019"
+    section: "18"
+    title: "Only permitted deductions — and not more than half"
+    summary: "An employer can deduct from wages only for purposes the Code allows (for example absence, recovery of advances/overpayment, tax, PF, damage or loss caused by the employee's neglect). Total deductions in a wage period cannot exceed 50% of the wages. A 'company policy' deduction outside this list is not allowed."
+    source_url: "https://www.indiacode.nic.in/handle/123456789/15793"
+    checked_against: "https://www.advocatekhoj.com/library/bareacts/codeonwages/18.php"
+    confidence: high
+
+  - id: cow_45
+    category: salary
+    act: "Code on Wages, 2019"
+    section: "45"
+    title: "Claim unpaid wages before the Authority"
+    summary: "The government appoints Authorities (officers of Gazetted rank or above) to hear wage claims. The employee, their registered trade union, or the Inspector-cum-Facilitator can file the claim within three years of when it arose (later only with sufficient cause). The Authority should try to decide within three months and can also order compensation."
+    forum: "Authority under the Code on Wages — through your state Labour Department / Labour Commissioner's office"
+    time_limit: "3 years from when the claim arose"
+    documents: ["offer/appointment letter", "salary slips", "bank statements showing salary credits", "resignation acceptance / relieving letter", "attendance records", "emails/WhatsApp about pending salary"]
+    source_url: "https://www.indiacode.nic.in/handle/123456789/15793"
+    checked_against: "https://tilakmarg.com/?p=5189"
+    confidence: high
+
+  - id: css_53
+    category: salary
+    act: "Code on Social Security, 2020"
+    section: "53"
+    title: "Gratuity on leaving"
+    summary: "Gratuity is payable on leaving after continuous service — normally five years; fixed-term employees qualify after one year (pro-rata). The Code on Social Security replaced the Payment of Gratuity Act from 21 November 2025."
+    source_url: "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251122702601.pdf"
+    checked_against: "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251122702601.pdf"
+    confidence: high
+
+  - id: salary_contract_terms
+    category: salary
+    act: "General principle"
+    section: "none"
+    title: "Leave encashment, bonus and notice pay depend on your documents"
+    summary: "Whether leave encashment, bonus or notice-period pay is due depends on your offer/appointment letter, company policy and your state's shops and establishments law. Read those documents first; if they promise the payment, refusing it is a breach of the agreement."
+    source_url: "https://www.indiacode.nic.in/handle/123456789/15793"
+    checked_against: "https://nyaaya.org/legal-explainer/whom-does-the-law-apply-to/"
+    confidence: low
+
+  # ================================================================== NOTICE RECEIVED
+  - id: notice_basics
+    category: notice
+    act: "General practice"
+    section: "none"
+    title: "A legal notice is a formal demand, not a court order"
+    summary: "A legal notice (from a landlord, company, employer or their lawyer) is a written demand before possible legal action. It is not a court order or summons, and its deadline is the sender's, not the court's. Replying is generally not legally compulsory, but ignoring it can be used against you later, so a calm written reply within the stated time is usually wise. Keep the envelope, the date you received it, and proof of your reply."
+    source_url: "https://blog.ipleaders.in/reply-legal-notice/"
+    checked_against: "https://blog.ipleaders.in/reply-legal-notice/"
+    confidence: medium
+
+  - id: ica_74
+    category: notice
+    also: [salary, deposit]
+    act: "Indian Contract Act, 1872"
+    section: "74"
+    title: "A penalty in an agreement is limited to reasonable compensation"
+    summary: "If an agreement names a sum to be paid on breach (for example a bond or a heavy late fee), the other side can get only REASONABLE compensation, up to that named sum — not automatically the full amount."
+    source_url: "https://www.indiacode.nic.in"
+    checked_against: "https://vidhijudicial.com/section-74-of-the-indian-contract-act,-1872.html"
+    confidence: high
+
+  - id: notice_when_lawyer
+    category: notice
+    act: "General practice"
+    section: "none"
+    title: "When a notice needs a lawyer straight away"
+    summary: "Court summons, police notices, cheque-bounce notices and notices with large amounts have strict consequences and are outside what this assistant handles — show them to a lawyer or free legal aid (NALSA 15100) immediately."
+    source_url: "https://nalsa.gov.in/legal-services/"
+    checked_against: "https://nalsa.gov.in/legal-services/"
+    confidence: medium
+
+  # ================================================================== REFERRAL (every area)
+  - id: lsa_12
+    category: referral
+    act: "Legal Services Authorities Act, 1987"
+    section: "12"
+    title: "Free legal aid"
+    summary: "Women and children, SC/ST members, industrial workmen, persons with disability, victims of disaster or trafficking, people in custody, and people below the state's income limit are entitled to free legal services, including a free lawyer."
+    forum: "District Legal Services Authority (DLSA) at your district court; NALSA helpline 15100; https://nalsa.gov.in"
+    source_url: "https://nalsa.gov.in/legal-services/"
+    checked_against: "https://nalsa.gov.in/legal-services/"
+    confidence: high

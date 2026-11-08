@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="48" viewBox="0 0 232 48">
+  <rect x="0" y="0" width="232" height="48" rx="12" fill="#141210"/>
+  <g fill="none" stroke="#E0692A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(12 8)">
+    <path d="M16 3v26M8 29h16M4 9h24M16 3l-1 6M16 3l1 6"/>
+    <path d="M7 9l-5 10h10z"/><path d="M25 9l-5 10h10z"/>
+  </g>
+  <text x="52" y="27" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-weight="700" fill="#F5EFE0">LAW-<tspan fill="#E0692A">YAAR</tspan></text>
+  <text x="53" y="40" font-family="Arial, Helvetica, sans-serif" font-size="8.5" letter-spacing="1.6" fill="#E0692A">YOUR LEGAL YAAR</text>
+</svg>

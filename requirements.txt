@@ -1,0 +1,10 @@
+streamlit>=1.52                  # 1.52+ has the 🎤 mic inside st.chat_input
+langgraph>=0.6                   # conversation graph
+langgraph-checkpoint-sqlite>=2.0 # chat history in SQLite
+langchain-groq>=0.3              # Groq chat models
+groq>=0.11                       # Groq Whisper speech-to-text
+pypdf>=4.0                       # read uploaded PDFs
+numpy>=1.26
+fastembed>=0.5                   # local multilingual embeddings for document search (~220 MB model, downloaded once)
+PyYAML>=6.0
+python-docx>=1.1
